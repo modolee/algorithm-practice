@@ -1,1 +1,7 @@
 .idea/
+algorithm-jobs/.vs/
+*.sln
+algorithm-jobs/*/*/Debug/
+algorithm-jobs/*/*/.vs/
+*.filters
+*.vcxproj
