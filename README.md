@@ -5,6 +5,8 @@
 ## Python
 * https://checkio.org
 * https://leetcode.com
+* https://programmers.co.kr
+* https://www.hackerrank.com
 
 ## C
 * https://www.algorithmjobs.io/
