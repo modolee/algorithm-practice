@@ -31,10 +31,12 @@ int is_valid(int *candidate) {
 
 int check_answer(int *candidate) {
     int i, j, k;
-    int strike = 0, ball = 0;
+    int strike, ball;
     int pass = 1;
     
     for(i = 0; i < numOfAnsSheet; i++) {
+		strike = 0;
+		ball = 0;
         for(j = 0; j < 3; j++) {
             for(k = 0; k < 3; k++) {
                 if(candidate[j] == ansSheet[i][k]) {
@@ -43,6 +45,7 @@ int check_answer(int *candidate) {
                     } else {
                         ball++;
                     }
+					break;
                 }
             }
         }
@@ -50,9 +53,6 @@ int check_answer(int *candidate) {
             pass = 0;
             return pass;
         }
-        
-        strike = 0;
-        ball = 0;
     }
     return pass;
 }
