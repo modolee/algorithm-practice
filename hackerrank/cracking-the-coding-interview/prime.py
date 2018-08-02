@@ -5,20 +5,18 @@ import os
 
 # Complete the primality function below.
 def primality(n):
-    if n == 1:
+    if n == 2:
+        return "Prime"
+
+    if n == 1 or (n & 1 == 0):
         return "Not prime"
-    else:
-        cnt = 0
-        i = 2
-        while i <= math.sqrt(n) and cnt < 1:
-            if n % i == 0:
-                cnt += 1
-                break
-            i += 1
-        if cnt > 0:
+
+    for i in range(3, int(math.sqrt(n)) + 1, 2):
+        if n % i == 0:
             return "Not prime"
-        else:
-            return "Prime"
+
+    return "Prime"
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
