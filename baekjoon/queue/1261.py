@@ -51,6 +51,10 @@ def is_valid_pos(row, col, goal_row, goal_col):
         return False
 
 
+# 시간 복잡도
+# 모든 포지션을 다 순회해야 되는 경우가 있으므로
+# M * N 만큼의 경우의 수가 나온다. 그래서 O(M*N)
+
 if __name__ == '__main__':
     # 상 하 좌 우 포지션별 행렬 좌표
     row_pos = [-1, 1, 0, 0]
