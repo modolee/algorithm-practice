@@ -7,6 +7,4 @@
 * https://leetcode.com
 * https://programmers.co.kr
 * https://www.hackerrank.com
-
-## C
-* https://www.algorithmjobs.io/
+* https://www.acmicpc.net
